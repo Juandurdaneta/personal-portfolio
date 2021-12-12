@@ -19,5 +19,7 @@ export const Links = styled.div`
     
     a{
         margin: 1em;
+        text-decoration: none;
+        color: var(--black);
     }
 `;

@@ -1,16 +1,17 @@
 import React from "react";
 import { Content, Wrapper, Links } from "./Navbar.styles";
 
+const pages = ['Works', 'Resume', 'Services', 'Contact']
+
 const Navbar = () => (
     <Wrapper>
         <Content>
             <p>juandurdanet@gmail.com</p>
 
         <Links>
-            <a>Works</a>
-            <a>Resume</a>
-            <a>Services</a>
-            <a>Contact</a>
+           {pages.map((page)=>(
+               <a href="#">{page}</a>
+               ))}
         </Links>
 
         </Content>
