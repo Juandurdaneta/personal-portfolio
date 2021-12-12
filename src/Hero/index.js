@@ -9,7 +9,10 @@ const Hero = () => (
     <Wrapper>
         <Content>
             <HeroImage src={heroImage}/>
-            <h1>Hi, I'm Juan👋</h1>
+            <h2>Hi, I'm Juan👋</h2>
+            <h1>Computer Engineer and <br/>Software <span className='underlined'> Developer</span></h1>
+            <p> <strong> Lorem ipsum dolor</strong> sit amet, <strong>consectetur adipiscing </strong>elit,<br /> sed do eiusmod tempor incididunt ut labore 
+                et <br />dolore magna aliqua.</p>
         </Content>
     </Wrapper>
 );

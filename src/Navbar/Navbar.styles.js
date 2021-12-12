@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FaRegEnvelope } from 'react-icons/fa';
 
 export const Wrapper = styled.div`
     padding: 0 20px;
@@ -23,3 +24,17 @@ export const Links = styled.div`
         color: var(--black);
     }
 `;
+
+export const Email = styled.div`
+    display: flex;
+    justify-content: space-between;
+
+    p{
+        margin: 1em;
+    }
+    
+`;
+
+export const EmailIcon = styled(FaRegEnvelope)`
+    font-size: 1.5rem;
+`
