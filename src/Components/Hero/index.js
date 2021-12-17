@@ -15,7 +15,7 @@ const Hero = () => (
             <p> <strong> Lorem ipsum dolor</strong> sit amet, <strong>consectetur adipiscing </strong>elit,<br /> sed do eiusmod tempor incididunt ut labore 
                 et <br />dolore magna aliqua.</p>
 
-            <Button text='CONNECT WITH ME'/>
+            <Button text='CONNECT WITH ME' link='/contact'/>
         </Content>
     </Wrapper>
 );

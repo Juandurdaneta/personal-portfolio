@@ -1,8 +1,8 @@
 import React from "react";
 import { Btn } from "./Button.styles";
 
-const Button = ({text}) => (
-    <Btn>{text}</Btn>
+const Button = ({text, link}) => (
+    <Btn href={link}>{text}</Btn>
 )
 
 
