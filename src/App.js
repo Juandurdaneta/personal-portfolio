@@ -1,8 +1,8 @@
 import React from "react";
 import { GlobalStyle } from "./GlobalStyle";
 //components
-import Navbar from "./Navbar";
-import Hero from "./Hero";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
 const App = () => (
 
   <>
