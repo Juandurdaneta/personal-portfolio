@@ -17,3 +17,10 @@ export const Content = styled.div`
         display: inline;
     }
 `;
+
+export const Cards = styled.div`
+    margin-top: 20px;
+    display: flex;
+    position: absolute;
+    left: 8rem;
+`

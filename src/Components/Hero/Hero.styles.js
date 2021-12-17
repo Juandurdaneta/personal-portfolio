@@ -15,20 +15,7 @@ export const Content = styled.div`
         font-size: 1.2rem;
     }
 
-    .underlined{
-        position: relative;
-    }
-    .underlined:after{
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        height: 6px;
-        width: 100%;
-        border: solid 6px var(--lightGreen);
-        border-color: var(--lightGreen) transparent transparent transparent;
-        border-radius: 100%;   
-    }
+
 `;
 
 export const HeroImage = styled.img`
