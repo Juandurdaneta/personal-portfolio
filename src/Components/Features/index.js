@@ -6,20 +6,20 @@ import Card from '../Card'
 
 const myServices = [
     {
-        'emoji' : '🎯',
-        'title' : 'Strategy & Direction',
+        'emoji' : '💾',
+        'title' : 'API Development',
         'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
 
     {
-        'emoji' : '✍️',
-        'title' : 'Design UI/UX',
+        'emoji' : '💵',
+        'title' : 'Stripe integration for your commerce',
         'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
 
     {
-        'emoji' : '📱',
-        'title' : 'Mobile App',
+        'emoji' : '🖥',
+        'title' : 'PSD/Figma to Full-Stack Application',
         'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     }
 ]
