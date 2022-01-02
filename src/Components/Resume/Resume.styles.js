@@ -13,11 +13,20 @@ export const Content = styled.div`
 `;
 
 export const Experience = styled.div`
-    display: flex;
-    padding: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 20px;
 
     h2{
         font-size: 1.6rem;
         font-weight: 600;
     }
+
+    .entry{
+
+    }
+
 `;
