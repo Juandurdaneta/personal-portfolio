@@ -4,6 +4,13 @@ export const Wrapper = styled.div`
 
     padding: 4% 20%;
 
+    @media screen and (max-width: 768px) {
+        
+        padding: 5%
+    
+    }
+
+
 `;
 
 export const Content = styled.div`
@@ -16,6 +23,19 @@ export const Content = styled.div`
     h1{
         display: inline;
     }
+
+    @media screen and (max-width: 768px) {
+
+        height: 100%;
+
+        h1{
+            font-size: 2rem
+        }
+
+        p{
+            font-size: .8rem
+        }
+    }
 `;
 
 export const Cards = styled.div`
@@ -23,4 +43,12 @@ export const Cards = styled.div`
     display: flex;
     position: absolute;
     left: 8rem;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: static;
+
+    }
+
+
 `

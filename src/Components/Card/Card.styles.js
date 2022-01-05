@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     padding: 50px;
-  
+    @media screen and (max-width: 768px) {
+        padding: 10px 60px;
+    }
 `;
 
 export const Content = styled.div`
@@ -20,4 +22,9 @@ export const Content = styled.div`
     p{
         color: gray;
     }
+
+    @media screen and (max-width: 768px) {
+        text-align:center;
+    }
+
 `;

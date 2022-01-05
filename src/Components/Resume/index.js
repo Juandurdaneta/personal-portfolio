@@ -29,7 +29,7 @@ const entries = [
 const Resume = () =>(
    <Wrapper>
        <Content>
-           <h1 class='underlined'>Resume</h1>
+           <h1 className='underlined'>Resume</h1>
 
             <Experience>
 

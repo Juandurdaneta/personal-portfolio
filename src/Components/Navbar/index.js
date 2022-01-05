@@ -1,25 +1,31 @@
 import React from "react";
-import { Content, Wrapper, Links, Email, EmailIcon } from "./Navbar.styles";
+import { Nav, NavLink, NavMenu, Bars, Envelope } from "./Navbar.styles";
 
 
 const pages = ['Works', 'Resume', 'Services', 'Contact']
 
 const Navbar = () => (
-    <Wrapper>
-        <Content>
-            <Email>
-               <p><EmailIcon /></p>
-                <p> juandurdanet@gmail.com</p>
-            </Email>
-
-        <Links>
-           {pages.map((page)=>(
-               <a href="#">{page}</a>
-               ))}
-        </Links>
-
-        </Content>
-    </Wrapper>
+    <Nav>
+        <NavLink to="/" activeStyle>
+            <Envelope />  juandurdanet@gmail.com
+            </NavLink>
+        <Bars />
+        <NavMenu>
+            <NavLink to="/" activeStyle>
+                Works
+            </NavLink>
+            <NavLink to="/" activeStyle>
+                Resume
+            </NavLink>
+            <NavLink to="/" activeStyle>
+                Services
+            </NavLink>
+            <NavLink to="/" activeStyle>
+                Contact
+            </NavLink>
+           
+        </NavMenu>
+    </Nav>
 
 );
 
