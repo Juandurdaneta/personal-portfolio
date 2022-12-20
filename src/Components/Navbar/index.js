@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { Nav, NavLink, NavMenu, Bars, Envelope, SideNav, SideNavItems, CloseNav, SideNavLink } from "./Navbar.styles";
 import {AiOutlineClose} from "react-icons/ai"
 
-const pages = ['Works', 'Resume', 'Services', 'Contact']
+const pages = ['Home','Works', 'Resume', 'Services', 'Contact']
 
 const Navbar = () => {
 
     const [toggleMenu, setToggleMenu] = useState(false);
 
-    console.log(toggleMenu);
 
     return(
     <Nav>
@@ -17,18 +16,11 @@ const Navbar = () => {
             </NavLink>
         <Bars onClick={() => setToggleMenu(!toggleMenu)} />
         <NavMenu>
-            <NavLink to="/works">
-                Works
-            </NavLink>
-            <NavLink to="/resume">
-                Resume
-            </NavLink>
-            <NavLink to="/services">
-                Services
-            </NavLink>
-            <NavLink to="/contact">
-                Contact
-            </NavLink>
+           {
+            pages.slice(1).map((page, index)=>(
+                <NavLink to={`/${page.toLowerCase()}`} key={index}>{page}</NavLink>
+            ))
+           }
            
         </NavMenu>
 
@@ -40,7 +32,7 @@ const Navbar = () => {
             </div>
             <SideNavItems>
                 {pages.map((page, index)=>(
-                    <SideNavLink to={ `/${page}` } key={index}>{page}</SideNavLink>
+                    <SideNavLink to={ `/${page.toLowerCase()}` } key={index}  onClick={() => setToggleMenu(!toggleMenu)}  >{page}</SideNavLink>
                 ))}
             </SideNavItems>
         </SideNav>

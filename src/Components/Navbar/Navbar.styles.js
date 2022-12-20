@@ -5,6 +5,8 @@ import { FaBars } from 'react-icons/fa';
 import {AiOutlineClose} from "react-icons/ai"
 
 
+// NAVBAR STYLES 
+
 export const Nav = styled.div`
     background: var(--white);
     height: 80px;
@@ -16,6 +18,8 @@ export const Nav = styled.div`
 
 export const NavMenu = styled.div`
   display: flex;
+  background: var(--white);
+
   align-items: center;
   @media screen and (max-width: 768px) {
     display: none;
@@ -56,12 +60,19 @@ export const Envelope = styled(FaRegEnvelope)`
   margin-right: 20px;
 `
 
+// SIDENAV STYLES 
+
 export const SideNav = styled.div`
   display: flex;
   height: 100%;
   position: fixed;
   right: 0;
-  background: var(--gray);
+  background: rgba( 234, 249, 250, 0.85 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   width: 70%;
   padding: 20px;
   margin: 0;
