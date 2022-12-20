@@ -33,12 +33,12 @@ const Resume = () =>(
 
             <Experience>
 
-                {entries.map((entry) => (
-                    <div className='entry'>
+                {entries.map((entry, index) => (
+                    <div key={index} className='entry'>
                        <h2>{entry.experience}</h2>
 
-                        {entry.previousExperience.map((experience)=>(
-                            <Reference title={experience.title} link={experience.link} role={experience.role} time={experience.time} />
+                        {entry.previousExperience.map((experience, index)=>(
+                            <Reference key={index} title={experience.title} link={experience.link} role={experience.role} time={experience.time} />
                         ))}
 
                     </div>

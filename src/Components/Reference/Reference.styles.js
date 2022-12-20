@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     padding: 20px 0;
+
+    @media screen and (max-width: 768px) {
+        padding: 10px 0;
+    }
+
 `;
 
 export const Content = styled.div`
@@ -10,5 +15,11 @@ export const Content = styled.div`
         text-decoration: none;
         color: black;
         font-weight: 500;
+    }
+
+    @media screen and (max-width: 768px) {
+        a{
+            font-size: 1rem
+        }
     }
 `;

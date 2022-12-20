@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { FaRegEnvelope } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
+import {AiOutlineClose} from "react-icons/ai"
+
 
 export const Nav = styled.div`
     background: var(--white);
@@ -15,12 +17,6 @@ export const Nav = styled.div`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -24px;
-  /* Second Nav */
-  /* margin-right: 24px; */
-  /* Third Nav */
-  /* width: 100vw;
-  white-space: nowrap; */
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -47,10 +43,10 @@ export const Bars = styled(FaBars)`
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 0;
+    top: 30;
     right: 0;
     transform: translate(-100%, 75%);
-    font-size: 1.8rem;
+    font-size: 1rem;
     cursor: pointer;
   }
 `;
@@ -58,4 +54,42 @@ export const Bars = styled(FaBars)`
 export const Envelope = styled(FaRegEnvelope)`
   color: var(--black);
   margin-right: 20px;
+`
+
+export const SideNav = styled.div`
+  display: flex;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  background: var(--gray);
+  width: 70%;
+  padding: 20px;
+  margin: 0;
+  z-index: 1;
+  top: 0;
+`;
+
+export const CloseNav = styled(AiOutlineClose)`
+  font-size: 27px;
+  color: var(--black);
+`
+
+export const SideNavItems = styled.div`
+  margin-top: 20px;
+  text-align: right;
+  width: 100%;
+
+`;
+
+export const SideNavLink = styled(Link)`
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  color: var(--black);
+  margin: 12px auto;
+
+  &.active {
+    color: var(--black);
+  }
 `

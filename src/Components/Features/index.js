@@ -29,8 +29,8 @@ const Features = () =>(
     <Content>
         <h1 className='underlined'>Services</h1>
         <Cards>
-            {myServices.map((feature) => (
-                <Card emoji={feature.emoji} title={feature.title} content={feature.content} />
+            {myServices.map((feature, index) => (
+                <Card key={index} emoji={feature.emoji} title={feature.title} content={feature.content} />
             ))}
         </Cards>
     </Content>
