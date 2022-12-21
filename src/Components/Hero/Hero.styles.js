@@ -18,6 +18,11 @@ export const Content = styled.div`
     }
 
     @media screen and (max-width: 768px) {
+
+        padding: 2%;
+        margin: 0;
+
+
         h1{
             font-size: 2rem;
         }

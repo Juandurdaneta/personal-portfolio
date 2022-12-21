@@ -11,7 +11,6 @@ export const Content = styled.div`
         font-size: 2.5rem;
         font-weight: 600;
     }
-   
 
 
     .entry{
@@ -66,6 +65,6 @@ export const Experience = styled.div`
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-
+    margin-top: 20px;
 `;
 

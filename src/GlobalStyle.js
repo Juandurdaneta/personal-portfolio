@@ -49,7 +49,9 @@ export const GlobalStyle = createGlobalStyle`
         width: 100%;
         border: solid 6px var(--lightGreen);
         border-color: var(--lightGreen) transparent transparent transparent;
-        border-radius: 100%;   
+        border-radius: 100%;
+        z-index: -1;
+
     }
 
 
