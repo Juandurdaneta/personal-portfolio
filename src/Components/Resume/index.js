@@ -26,18 +26,32 @@ const entries = [
     },
     {
         'title': 'Certifications',
-        'items': [{
+        'items': [
+        {
+            'title': 'Responsive Web Design',
+            'link' : 'https://www.freecodecamp.org/certification/juandurdaneta/responsive-web-design',
+            'role': '',
+            'time': 'Issued May 12, 2021'
+        },
+        {
+            'title': 'Scrum Foundation Professional Certificate ',
+            'link' : 'https://www.credly.com/badges/f3cc484d-4dc3-4d2a-9380-65530488be2d',
+            'role': '',
+            'time': 'Issued July 11, 2021'
+        },
+        {
             'title': 'Web Development Bootcamp',
             'link' : 'https://www.udemy.com/certificate/UC-ac914924-609f-43e3-a45e-858e273a0bf1/',
             'role': '',
-            'time': '2021'
+            'time': 'Issued Sept. 24, 2021'
         },
         {
-            'title': 'Python Pro Bootcamp',
-            'link' : 'http://www.uru.edu',
+            'title': 'JavaScript Algorithms and Data Structures',
+            'link' : 'https://www.freecodecamp.org/certification/juandurdaneta/javascript-algorithms-and-data-structures',
             'role': '',
-            'time': '2022'
+            'time': 'Issued May 13, 2022'
         },
+        
     ]
     }
 ]
@@ -52,20 +66,17 @@ const Resume = () =>(
                 {entries.map((entry, index) => (
                     <div key={index} className='entry'>
                        <h2 className="text-blue-600">{entry.title}</h2>
-
-                        {entry.items.map((item, index)=>(
-                            <Reference key={index} title={item.title} link={item.link} role={item.role} time={item.time} />
-                        ))}
-
+                            <div className="references-list">
+                                {entry.items.map((item, index)=>(
+                                    <Reference key={index} title={item.title} link={item.link} role={item.role} time={item.time} />
+                                ))}
+                            </div>
                     </div>
                 ))}
 
             </Experience>
 
        </Content>
-
-       <h2 className="text-blue-600">test</h2>
-
 
    </Wrapper>
 );

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     padding: 7% 12%;
+    
 `;
 
 export const Content = styled.div`
@@ -10,44 +11,61 @@ export const Content = styled.div`
         font-size: 2.5rem;
         font-weight: 600;
     }
+   
+
+
+    .entry{
+        width: 40%;
+        flex-grow: 1;
+        min-height: 120px;
+        box-sizing: border-box;
+        margin: 0 5px 10px;
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    h2{
+        font-size: 1.7rem;
+        margin-bottom: 5px;
+    }
+
+    .references-list{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .references-list > div{
+        flex: 50%;
+    }
 
     @media screen and (max-width: 768px) {
+
+        text-align: center;
+     
+
         h1{
             font-size: 2rem;
         }
+        
+
+        .entry{
+            width: 100%;
+            text-align: center;
+        }
+
+        .references-list > div{
+            flex: 100%;
+        }
+    
+
     }
 
 `;
 
 export const Experience = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-top: 20px;
-
-    h2{
-        font-size: 1.6rem;
-        font-weight: 600;
-        margin-bottom: 0;
-    }
-
-    .entry{
-
-    }
-
-    @media screen and (max-width: 768px) {
-
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 50px;
-        grid-row-gap: px;
-
-        h2{
-            font-size: 1.2rem;
-        }
-    }
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 
 `;
+
