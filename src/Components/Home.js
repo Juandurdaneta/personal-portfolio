@@ -7,7 +7,6 @@ import Resume from "./Resume";
 const Home = () =>(
     <>
         <Hero />
-        {/* <Features /> */}
         <Resume />
     </>
 )

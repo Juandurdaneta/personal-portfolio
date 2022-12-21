@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Nav, NavLink, NavMenu, Bars, Envelope, SideNav, SideNavItems, CloseNav, SideNavLink } from "./Navbar.styles";
 import {AiOutlineClose} from "react-icons/ai"
 
-const pages = ['Home','Works', 'Resume', 'Services', 'Contact']
+const pages = ['Home', 'Resume']
 
 const Navbar = () => {
 

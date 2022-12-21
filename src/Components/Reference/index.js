@@ -1,15 +1,13 @@
 import React from "react";
-import { Content, Wrapper } from "./Reference.styles";
-import { CgArrowTopRight } from 'react-icons/cg';
+import { Wrapper } from "./Reference.styles";
+import CustomLink from "../CustomLink";
 
 
 const Reference = ({title, link, role, time}) => (
     <Wrapper>
-        <Content>
-            <a href={link}> <strong> {title}</strong> <CgArrowTopRight /> </a>
+            <CustomLink link={link} text={title} />
             <p><strong>{role}</strong></p>
             <p>{time}</p>
-        </Content>
     </Wrapper>
 ) 
 
