@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
     padding: 5%;
-    height: 90vh;
+    height: 80vh;
 
     h1{
         font-size: 3rem;
