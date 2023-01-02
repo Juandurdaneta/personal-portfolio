@@ -4,8 +4,7 @@ import styled from "styled-components";
 // WRAPPER AND HEADER
 export const Wrapper = styled.div`
     padding: 0 12% 8%;
-    text-align: center;
-   
+    text-align: center;   
 
 `;
 
@@ -16,6 +15,9 @@ export const WrapperHeader = styled.div`
 
     @media screen and (max-width: 768px) {
         display: block;
+        a {
+            display: none;
+        }
     }
 
     
@@ -36,6 +38,11 @@ export const ButtonLink = styled.a`
     
 `;
 
+export const SmallerScreenButtonDisplay = styled.div`
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+`
 
 // END WRAPPER AND HEADER 
 
@@ -44,14 +51,11 @@ export const ButtonLink = styled.a`
 
 
 export const Image = styled.img`
-    height: 100%;
     width: 100%;
-    object-fit: cover;
 `;
 
 export const ImageContainer = styled.div`
-    height: 250px;
-    width: 100%;
+    height: auto;
 `;
 
 // END CONTENT
