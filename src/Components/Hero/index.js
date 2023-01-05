@@ -12,9 +12,10 @@ const Hero = () => (
             <HeroImage src={heroImage}/>
             <h2>Hi, I'm Juan👋</h2>
             <h1>Computer Engineer and <br/>Software <span className='underlined'> Developer</span></h1>
-            <p> <strong> Lorem ipsum dolor</strong> sit amet, <strong>consectetur adipiscing </strong>elit,<br /> sed do eiusmod tempor incididunt ut labore 
-                et <br />dolore magna aliqua.</p>
-
+            <p> 
+            Proactive <strong>problem-solver</strong> with excellent <strong>communication skills</strong>, <br/> able to work effectively in both team and
+            independent settings.
+            </p>
             <Button text='CONNECT WITH ME' link='/contact'/>
         </Content>
     </Wrapper>

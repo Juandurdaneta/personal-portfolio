@@ -2,7 +2,7 @@ import React from "react";
 import { ImageContainer, Wrapper, Image, WrapperHeader, ButtonLink, SmallerScreenButtonDisplay } from "./RecentProjects.styles";
 import mainImageKrypt from "../../images/krypt/cover.png"
 import mainImagePy from "../../images/Pygallery/cover.png"
-import mainImageVis from "../../images/Visionary/1.png"
+import mainImageVis from "../../images/Visionary/cover.png"
 import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
 
 const RecentProjects = () => (
@@ -29,10 +29,20 @@ const RecentProjects = () => (
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen</p>
                 </Grid2>
 
+                <Grid2 xs={12}>
+                    <ImageContainer>
+                        <Image src={mainImageVis} />
+                    </ImageContainer>
+                    <h2>Visionary</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen</p>
+                </Grid2>
+
+
                 
             </Grid2>
             
             <SmallerScreenButtonDisplay>
+                
                 <ButtonLink>See all projects</ButtonLink>
             </SmallerScreenButtonDisplay>
 
