@@ -15,13 +15,13 @@ const RecentProjects = () => (
             <Grid2 container spacing={2}>
                 
                 <Grid2 md={6} xs={12}>
-                    <ProjectThumbnail title={'Pygallery'} description={'lorem ipsum'} />
+                    <ProjectThumbnail title={'Pygallery'} summary={'lorem ipsum'} />
                 </Grid2>
                 <Grid2 md={6} xs={12}>
-                    <ProjectThumbnail title={'Krypt'} description={'lorem ipsum'} />
+                    <ProjectThumbnail title={'Krypt'} summary={'lorem ipsum'} />
                 </Grid2>
                 <Grid2 xs={12}>
-                    <ProjectThumbnail title={'Visionary'} description={'lorem ipsum'} />
+                    <ProjectThumbnail title={'Visionary'} summary={'lorem ipsum'} />
                 </Grid2>
                 
             </Grid2>

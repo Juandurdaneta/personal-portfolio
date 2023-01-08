@@ -16,7 +16,7 @@ const Projects = () =>(
                 {
                     projectNames.map((project, index)=>(
                         <Grid2 key={index} md={4} xs={12}>
-                            <ProjectThumbnail title={project} description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen' />
+                            <ProjectThumbnail title={project} summary='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen' />
                         </Grid2>
                     ))
                 }
