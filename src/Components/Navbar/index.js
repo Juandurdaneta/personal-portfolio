@@ -16,7 +16,7 @@ const Navbar = () => {
         <Bars onClick={() => setToggleMenu(!toggleMenu)} />
         <NavMenu>
            {
-            pages.slice(1).map((page, index)=>(
+            pages.map((page, index)=>(
                 <NavLink to={`/${page.toLowerCase()}`} key={index}>{page}</NavLink>
             ))
            }
