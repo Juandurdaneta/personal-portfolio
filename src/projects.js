@@ -19,7 +19,7 @@ export const projects = [
     'images': [],
 },
 {
-    'title': 'Visionary',
+    'title': 'Krypt',
     'summary': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen',
     'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen',
     'images': [],

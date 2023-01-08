@@ -3,6 +3,9 @@ import { Image, ImageContainer } from "./ProjectThumbnail.styles";
 
 const ProjectThumbnail = ({title, summary}) => (
     <>
+        {
+            
+        }
         <ImageContainer>
             <Image src={require(`../../images/${title}/cover.png`)} />
         </ImageContainer>
