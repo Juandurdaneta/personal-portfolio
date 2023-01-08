@@ -7,7 +7,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Resume from "./Components/Resume";
 import Projects from "./Components/Projects";
-
+import ScrollToTop from "./ScrollToTop";
 const App = () => (
 
   // <>
@@ -19,7 +19,7 @@ const App = () => (
   <Router>
 
     <Navbar />
-
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />}>
         <Route index element={<Home/>}/>
