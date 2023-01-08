@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Resume from "./Components/Resume";
+import Projects from "./Components/Projects";
 
 const App = () => (
 
@@ -23,6 +24,7 @@ const App = () => (
         <Route path='home' element={<Home />} />
       </Route>
       <Route path='/resume' element={<Resume />} />
+      <Route path='/projects' element={<Projects />} />
     </Routes>
 <GlobalStyle />
 

@@ -13,8 +13,8 @@ const Hero = () => (
             <h2>Hi, I'm Juan👋</h2>
             <h1>Computer Engineer and <br/>Software <span className='underlined'> Developer</span></h1>
             <p> 
-            Proactive <strong>problem-solver</strong> with excellent <strong>communication skills</strong>, <br/> able to work effectively in both team and
-            independent settings.
+                Proactive <strong>problem-solver</strong> with excellent <strong>communication skills</strong>, <br/> able to work effectively in both team and
+                independent settings.
             </p>
             <Button text='CONNECT WITH ME' link='/contact'/>
         </Content>
