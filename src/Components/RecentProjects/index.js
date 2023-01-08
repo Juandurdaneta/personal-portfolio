@@ -4,12 +4,15 @@ import mainImageKrypt from "../../images/krypt/cover.png"
 import mainImagePy from "../../images/Pygallery/cover.png"
 import mainImageVis from "../../images/Visionary/cover.png"
 import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
+import { Link } from "react-router-dom";
 
 const RecentProjects = () => (
     <Wrapper>
             <WrapperHeader>
                 <h1>Latest <span className="underlined">projects</span></h1>
-                <ButtonLink>See all projects</ButtonLink>
+                <Link to='/projects' style={{textDecoration:'none'}}>
+                    <ButtonLink>See all projects</ButtonLink>
+                </Link>
             </WrapperHeader>
 
             <Grid2 container spacing={2}>
@@ -42,8 +45,9 @@ const RecentProjects = () => (
             </Grid2>
             
             <SmallerScreenButtonDisplay>
-                
-                <ButtonLink>See all projects</ButtonLink>
+                <Link to='/projects' style={{textDecoration:'none'}}>
+                    <ButtonLink>See all projects</ButtonLink>
+                </Link>
             </SmallerScreenButtonDisplay>
 
         

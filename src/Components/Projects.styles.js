@@ -13,15 +13,5 @@ export const Wrapper = styled.div`
 // GRID CONTAINER
 
 export const GridContainer = styled.div`
-    margin-top: 20px;
-`;
-
-// IMAGE STYLES
-
-export const Image = styled.img`
-    width: 100%;
-`;
-
-export const ImageContainer = styled.div`
-    height: auto;
+    margin-top: 30px;
 `;
