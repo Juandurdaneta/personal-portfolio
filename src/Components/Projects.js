@@ -4,7 +4,7 @@ import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
 import ProjectThumbnail from "./ProjectThumbnail";
 
 
-const projectNames = ['Pygallery', 'Visionary', 'krypt']
+const projectNames = ['Pygallery', 'Visionary', 'Krypt']
 
 const Projects = () =>(
     <Wrapper>

@@ -46,16 +46,3 @@ export const SmallerScreenButtonDisplay = styled.div`
 
 // END WRAPPER AND HEADER 
 
-
-// CONTENT
-
-
-export const Image = styled.img`
-    width: 100%;
-`;
-
-export const ImageContainer = styled.div`
-    height: auto;
-`;
-
-// END CONTENT
