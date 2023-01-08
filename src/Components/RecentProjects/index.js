@@ -3,6 +3,9 @@ import { Wrapper, WrapperHeader, ButtonLink, SmallerScreenButtonDisplay } from "
 import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
 import { Link } from "react-router-dom";
 import ProjectThumbnail from "../ProjectThumbnail"
+import { projects } from "../../projects";
+
+
 const RecentProjects = () => (
     <Wrapper>
             <WrapperHeader>
@@ -15,13 +18,13 @@ const RecentProjects = () => (
             <Grid2 container spacing={2}>
                 
                 <Grid2 md={6} xs={12}>
-                    <ProjectThumbnail title={'Pygallery'} summary={'lorem ipsum'} />
+                    <ProjectThumbnail title={projects[0].title} summary={projects[0].summary} />
                 </Grid2>
                 <Grid2 md={6} xs={12}>
-                    <ProjectThumbnail title={'Krypt'} summary={'lorem ipsum'} />
+                    <ProjectThumbnail title={projects[1].title} summary={projects[1].summary} />
                 </Grid2>
                 <Grid2 xs={12}>
-                    <ProjectThumbnail title={'Visionary'} summary={'lorem ipsum'} />
+                    <ProjectThumbnail title={projects[3].title} summary={projects[3].summary} />
                 </Grid2>
                 
             </Grid2>

@@ -7,7 +7,7 @@ import { projects } from "../projects";
 const Projects = () =>(
     <Wrapper>
         <div>
-            <h1>Latest <span className="underlined">Projects</span></h1>
+            <h1>My <span className="underlined">projects</span></h1>
             
             <GridContainer>
                 <Grid2 container spacing={1.5}>
