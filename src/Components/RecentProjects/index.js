@@ -18,13 +18,13 @@ const RecentProjects = () => (
             <Grid2 container spacing={2}>
                 
                 <Grid2 md={6} xs={12}>
-                    <ProjectThumbnail title={projects[0].title} summary={projects[0].summary} />
+                    <ProjectThumbnail  id={1} title={projects[0].title} summary={projects[0].summary} />
                 </Grid2>
                 <Grid2 md={6} xs={12}>
-                    <ProjectThumbnail title={projects[1].title} summary={projects[1].summary} />
+                    <ProjectThumbnail id={2} title={projects[1].title} summary={projects[1].summary} />
                 </Grid2>
                 <Grid2 xs={12}>
-                    <ProjectThumbnail title={projects[3].title} summary={projects[3].summary} />
+                    <ProjectThumbnail id={4} title={projects[3].title} summary={projects[3].summary} />
                 </Grid2>
                 
             </Grid2>

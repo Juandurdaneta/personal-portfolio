@@ -8,6 +8,7 @@ import Home from "./Components/Home";
 import Resume from "./Components/Resume";
 import Projects from "./Components/Projects";
 import ScrollToTop from "./ScrollToTop";
+import Project from "./Components/Project";
 const App = () => (
 
   // <>
@@ -27,6 +28,7 @@ const App = () => (
       </Route>
       <Route path='/resume' element={<Resume />} />
       <Route path='/projects' element={<Projects />} />
+      <Route path='/projects/:projectId' element={<Project />}/>
     </Routes>
 
     <GlobalStyle />

@@ -13,9 +13,9 @@ const Projects = () =>(
                 <Grid2 container spacing={1.5}>
                 {
                     projects.map((project, index)=>(
-                        <Grid2 key={index} md={4} xs={12}>
-                            <ProjectThumbnail title={project.title} summary={project.summary} />
-                        </Grid2>
+                            <Grid2 key={index} md={4} xs={12}>
+                                    <ProjectThumbnail id={project.id} title={project.title} summary={project.summary} />
+                            </Grid2>
                     ))
                 }
                 </Grid2>
