@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 
 // WRAPPER AND HEADER
 export const Wrapper = styled.div`
@@ -23,13 +23,14 @@ export const WrapperHeader = styled.div`
     
 `;
 
-export const ButtonLink = styled.a`
+export const ButtonLink = styled(Link)`
     padding: 10px;
     background-color: var(--lightGreen);
     color: var(--white);
     height: 45px;
     margin-top: 15px;
     box-shadow: 5px 5px black;
+    text-decoration: none;
 
 
     @media screen and (max-width: 768px) {
