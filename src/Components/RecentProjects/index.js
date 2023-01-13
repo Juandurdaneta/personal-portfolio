@@ -21,7 +21,7 @@ const RecentProjects = () => (
                     <ProjectThumbnail id={2} title={projects[1].title} summary={projects[1].summary} />
                 </Grid2>
                 <Grid2 xs={12}>
-                    <ProjectThumbnail id={4} title={projects[3].title} summary={projects[3].summary} />
+                    <ProjectThumbnail id={3} title={projects[2].title} summary={projects[2].summary} />
                 </Grid2>
                 
             </Grid2>

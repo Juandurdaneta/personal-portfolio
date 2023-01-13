@@ -3,7 +3,6 @@ import { useParams } from "react-router";
 import { projects } from "../projects";
 import ProjectThumbnail from "./ProjectThumbnail";
 import { ImageList, ImageListItem, Fade } from "@mui/material";
-import { HeaderText } from "./Project.styles";
 import { Modal } from "@mui/material";
 
 const Project = () => {
@@ -34,12 +33,11 @@ const Project = () => {
     
 
     return(
+
         <div className='wrapper'>
             <ProjectThumbnail title={project.title} onlyThumb />
 
-            <HeaderText>
                 <h1>{project.title}</h1>
-            </HeaderText>
 
             <p>{project.description}</p>
 
@@ -70,9 +68,8 @@ const Project = () => {
                         open={open}
                         onClose={handleModalClose}
                         closeAfterTransition
-                        aria-labelledby="modal-modal-title"
-                        aria-describedby="modal-modal-description"
                         style={{display: 'flex', alignItems: 'center', justifyContent:'center'}}
+                        
                         >
                             <Fade in={open} timeout={500} style={{outline: 0}}>
                                 <img 

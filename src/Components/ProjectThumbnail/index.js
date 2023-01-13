@@ -11,6 +11,7 @@ const ProjectThumbnail = ({title, summary, id, onlyThumb}) => (
                 <Image src={require(`../../images/${title}/cover.png`)} />
             </ImageContainer>
         </Link>
+        
         <h2>{title}</h2>
         <p>{summary}</p>
      </> :
