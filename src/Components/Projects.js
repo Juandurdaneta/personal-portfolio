@@ -4,11 +4,13 @@ import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
 import ProjectThumbnail from "./ProjectThumbnail";
 import { projects } from "../projects";
 
-const Projects = () =>(
+const Projects = () =>{
+
+    return(
     <Wrapper>
         <div>
             <h1>My <span className="underlined">projects</span></h1>
-            
+
             <GridContainer>
                 <Grid2 container spacing={1.5}>
                 {
@@ -22,6 +24,6 @@ const Projects = () =>(
             </GridContainer>
         </div>
     </Wrapper>
-);
+)};
 
 export default Projects;
