@@ -17,7 +17,7 @@ export const projects = [
 {
     'id': 3,
     'title': 'Moviestore.',
-    'summary': 'Mobile app for movie reviews.',
+    'summary': 'Mobile app for movie reviews based on IMDB.',
     'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen',
     'images': [],
 },
