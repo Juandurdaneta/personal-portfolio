@@ -55,4 +55,13 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 
+    .wrapper {
+        padding: 0 12% 8%;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+    }
+
+
 `
