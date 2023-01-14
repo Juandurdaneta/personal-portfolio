@@ -47,7 +47,7 @@ const Project = () => {
 
                 <h2>Image Gallery</h2>
                 
-                <ImageList sx={{ width: '100%', height: 500 }} rowHeight={164} variant="woven" cols={3} gap={8}>
+                <ImageList sx={{ width: '100%'}} rowHeight={164} variant="woven" cols={3} gap={8}>
                     {
                         project.images.map((image, index) =>(
                             <ImageListItem key={index} onClick={()=> handleModalOpen(image)}>

@@ -19,14 +19,14 @@ export const projects = [
     'title': 'Moviestore.',
     'summary': 'Mobile app for movie reviews based on IMDB.',
     'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen',
-    'images': [],
+    'images': ['1.png', '2.png', '3.png', '4.png', '5.png','6.png', '7.png', '8.png', '9.png', '10.png', '11.png',],
 },
 {
     'id': 4,
     'title': 'Krypt',
     'summary': 'Web 3.0 Blockchain application.',
     'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacus et elit gravida venen',
-    'images': [],
+    'images': ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png'],
 },
 
 
