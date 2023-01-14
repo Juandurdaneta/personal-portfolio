@@ -4,6 +4,7 @@ import { projects } from "../projects";
 import ProjectThumbnail from "./ProjectThumbnail";
 import { ImageList, ImageListItem, Fade } from "@mui/material";
 import { Modal } from "@mui/material";
+import { ImageItem, ImageListGrid, ImageListGridItem } from "./Project.styles";
 
 const Project = () => {
 
@@ -45,20 +46,20 @@ const Project = () => {
             project.images.length > 0 &&
                 <>
 
-                <h2>Image Gallery</h2>
+                <h2>Image Gallery </h2>
                 
-                <ImageList sx={{ width: '100%'}} rowHeight={164} variant="woven" cols={3} gap={8}>
+                <ImageListGrid sx={{ width: '100%', height: 400, gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))!important', mb: 8,}} gap={8} >
                     {
                         project.images.map((image, index) =>(
-                            <ImageListItem key={index} onClick={()=> handleModalOpen(image)}>
-                                <img 
+                            <ImageListGridItem sx={{ height: '190px !important'}} key={index} onClick={()=> handleModalOpen(image)}>
+                                <ImageItem 
                                 src={require(`../images/${project.title}/${image}`)}
                                 loading='lazy'
                                 />
-                            </ImageListItem>
+                            </ImageListGridItem>
                         ))
                     }
-                </ImageList>
+                </ImageListGrid>
 
                 {/* MODAL */}
             
