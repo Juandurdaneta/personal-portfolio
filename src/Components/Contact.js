@@ -3,25 +3,33 @@ import { FormInput, FormTextArea, FormWrapper, SubmitFormButton, Wrapper } from 
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { GridContainer } from "./Projects.styles";
 import emailjs from '@emailjs/browser';
+import { Alert, AlertTitle } from "@mui/material";
+import { PUBLIC_KEY, SERVICE, TEMPLATE } from "../config";
+
 
 const Contact = () => {
 
     const [name, setName] = useState('');
     const [mail, setMail] = useState('');
     const [message, setMessage] = useState('');
+    const [displayAlert, setDisplayAlert] = useState(false);
+    const [error, setError] = useState(false);
 
     const form = useRef();
 
     const sendMail = (e) => {
         e.preventDefault();
 
-
         setName('');setMail('');setMessage('');
 
-        emailjs.sendForm('service_96b1el9', 'template_bf4p3bi', form.current, 'FtqZds5uoTqUAXjvk')
+
+        emailjs.sendForm(SERVICE, TEMPLATE, form.current, PUBLIC_KEY)
         .then((result) => {
+            setDisplayAlert(true);
             console.log(result.text);
         }, (error) => {
+            setDisplayAlert(true);
+            setError(true);
             console.log(error.text);
         });
     };
@@ -30,6 +38,25 @@ const Contact = () => {
 
     return(
     <Wrapper>
+
+        {
+            displayAlert && 
+                (
+                !error 
+                    ? 
+                    <Alert severity="success">
+                        <AlertTitle>Success</AlertTitle>
+                        Your message has been sent successfully! — <strong>Thanks for contacting me.</strong>
+                    </Alert>
+                    :
+                    <Alert severity="error">
+                        <AlertTitle>Error</AlertTitle>
+                        Something went wrong... <strong>Try again later!</strong>
+                    </Alert>
+                )
+        }
+     
+
         <h1>Love to hear from you,<br/>Get in touch👋</h1>
         <FormWrapper ref={form}>
             <GridContainer>
@@ -51,6 +78,8 @@ const Contact = () => {
 
             <SubmitFormButton type='submit' onClick={sendMail}>Send</SubmitFormButton>
         </FormWrapper>
+
+     
 
     </Wrapper>
 )
