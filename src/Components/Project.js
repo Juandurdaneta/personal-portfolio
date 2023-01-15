@@ -40,7 +40,7 @@ const Project = () => {
 
                 <h1>{project.title}</h1>
 
-            <p>{project.description}</p>
+            <p style={{whiteSpace: 'pre-line'}}>{project.description}</p>
 
             {
             project.images.length > 0 &&

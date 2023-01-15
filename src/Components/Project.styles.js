@@ -9,7 +9,7 @@ export const ImageListGrid = styled(ImageList)`
 
 export const ImageListGridItem = styled(ImageListItem)`
     border-radius: 15px;
-    border: 2px solid rgba(0,0,0,0.20);
+    border: 1px solid rgba(0,0,0,0.20);
     width: 100%;
     :hover{
         cursor: pointer;
