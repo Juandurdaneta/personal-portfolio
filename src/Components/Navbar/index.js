@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Nav, NavLink, NavMenu, Bars, Envelope, SideNav, SideNavItems, CloseNav, SideNavLink } from "./Navbar.styles";
 
-const pages = ['Home', 'Resume', 'Projects']
+const pages = ['Home', 'Resume', 'Projects', 'Contact']
 
 const Navbar = () => {
 

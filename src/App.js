@@ -9,13 +9,8 @@ import Resume from "./Components/Resume";
 import Projects from "./Components/Projects";
 import ScrollToTop from "./ScrollToTop";
 import Project from "./Components/Project";
+import Contact from "./Components/Contact";
 const App = () => (
-
-  // <>
-  // <Navbar />
- 
-  // <GlobalStyle />
-  // </>
 
   <Router>
 
@@ -29,6 +24,8 @@ const App = () => (
       <Route path='/resume' element={<Resume />} />
       <Route path='/projects' element={<Projects />} />
       <Route path='/projects/:projectId' element={<Project />}/>
+      <Route path='/contact' element={<Contact />} />
+
     </Routes>
 
     <GlobalStyle />
