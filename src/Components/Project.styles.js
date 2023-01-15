@@ -1,5 +1,7 @@
 import { ImageList, ImageListItem } from "@mui/material";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { AiFillGithub } from 'react-icons/ai'
 
 export const ImageListGrid = styled(ImageList)`
     background-color: rgb(248, 248, 248);
@@ -24,3 +26,17 @@ export const ImageItem = styled.img`
     border-radius: 15px;
 `;
 
+export const ButtonLink = styled.a`
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--white);
+    height: 45px;
+    margin: auto;
+    box-shadow: 5px 5px black;
+    text-decoration: none;
+    
+`;
+
+export const GithubLogo = styled(AiFillGithub)`
+    vertical-align: bottom;
+`;

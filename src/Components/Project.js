@@ -2,9 +2,10 @@ import React, {useState} from "react";
 import { useParams } from "react-router";
 import { projects } from "../projects";
 import ProjectThumbnail from "./ProjectThumbnail";
-import { ImageList, ImageListItem, Fade } from "@mui/material";
+import { Fade, Button } from "@mui/material";
 import { Modal } from "@mui/material";
-import { ImageItem, ImageListGrid, ImageListGridItem } from "./Project.styles";
+import {  ImageItem, ImageListGrid, ImageListGridItem, ButtonLink, GithubLogo } from "./Project.styles";
+import { AiFillGithub } from 'react-icons/ai'
 
 const Project = () => {
 
@@ -85,6 +86,12 @@ const Project = () => {
 
             }
 
+            {
+                project.github_link && ( 
+                    <ButtonLink href={project.github_link}> View Source code on  <GithubLogo size={24} /> </ButtonLink>
+                )
+            }
+           
 
         </div>
     );
