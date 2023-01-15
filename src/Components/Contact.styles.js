@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
 
 `;
 
-export const FormWrapper = styled.div`
+export const FormWrapper = styled.form`
     margin-top: 30px;
    
 `;
